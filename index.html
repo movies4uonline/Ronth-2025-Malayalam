@@ -443,25 +443,25 @@
 <script type='text/javascript' src='//dozepokinganthem.com/29/99/aa/2999aa90e5d86f11b727ee915517276a.js'></script>
 
 
-  <!-- Disable keyboard shortcuts (F12, Ctrl+U, Ctrl+Shift+I/J) -->
+  <!-- Protection Script (Safe for Ads) -->
   <script>
-  // Disable right-click only
-  document.addEventListener('contextmenu', function (e) {
-    e.preventDefault();
-  });
-
-  // Disable common inspect shortcuts
-  document.addEventListener('keydown', function (e) {
-    if (
-      e.key === 'F12' || e.keyCode === 123 || // F12
-      (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase())) || // Ctrl+Shift+I/J/C
-      (e.ctrlKey && e.key.toUpperCase() === 'U') // Ctrl+U
-    ) {
+    // Disable right-click
+    document.addEventListener('contextmenu', function(e) {
       e.preventDefault();
-      return false;
-    }
-  });
-</script>
+    });
+
+    // Block common inspect shortcuts
+    document.addEventListener('keydown', function(e) {
+      if (
+        e.key === 'F12' || e.keyCode === 123 ||
+        (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase())) ||
+        (e.ctrlKey && e.key.toUpperCase() === 'U')
+      ) {
+        e.preventDefault();
+        return false;
+      }
+    });
+  </script>
 
 
 
